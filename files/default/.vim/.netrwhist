@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/etc/resolvconf'
+let g:netrw_dirhist_2='/Users/lorenzo/tmp/projects/wine_forecasting_tool_frontend'
+let g:netrw_dirhist_3='/Users/lorenzo/tmp/projects/sinatra_wine_backend'
+let g:netrw_dirhist_4='/Users/lorenzo/src/clojure-koans/src/koans'
+let g:netrw_dirhist_5='/Users/lorenzo/.berkshelf/cookbooks/riak-2.4.1'
+let g:netrw_dirhist_6='/Users/lorenzo/work/teseo/rip/create'

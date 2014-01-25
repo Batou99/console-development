@@ -1,0 +1,33 @@
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/msanders-snipmate.vim"]
+	path = bundle/msanders-snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/tpope-vim-ragtag"]
+	path = bundle/tpope-vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "bundle/tpope-vim-rails"]
+	path = bundle/tpope-vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/tpope-vim-surround"]
+	path = bundle/tpope-vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-tcomment"]
+	path = bundle/vim-tcomment
+	url = https://github.com/noxoc/vim-tcomment.git
+[submodule "bundle/vim-makegreen"]
+	path = bundle/vim-makegreen
+	url = https://github.com/reinh/vim-makegreen.git
+[submodule "bundle/vim-ruby-debugger"]
+	path = bundle/vim-ruby-debugger
+	url = https://github.com/astashov/vim-ruby-debugger.git
+[submodule "bundle/vim-numbertoggle"]
+	path = bundle/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git

@@ -6,6 +6,12 @@
 # 
 # All rights reserved - Do Not Redistribute
 #
+
+node['oh-my-zsh']['users'] = [
+  { 'login': 'vagant', 'theme': 'blinks' },
+  { 'login': 'root', 'theme': 'blinks' }
+]
+
 execute "update package index" do
   command "apt-get update"
   ignore_failure true

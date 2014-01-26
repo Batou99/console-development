@@ -26,10 +26,11 @@ remote_directory "/home/vagrant/" do
   files_group 'vagrant'
 end
 
+include_recipe 'oh-my-zsh'
+
 %w( .tmux.conf .zshrc).each do |file|
   cookbook_file file do
     path '/home/vagrant'
     action :create_if_missing
   end
-
 end

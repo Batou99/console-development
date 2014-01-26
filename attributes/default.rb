@@ -1,5 +1,5 @@
-[:oh_my_zsh][:users] = [{
-  :login => 'vagrant',
-  :theme => 'blinks',
-  :plugins => ['gem', 'git', 'rails3', 'redis-cli', 'ruby']
-}]
+node['oh-my-zsh']['users'] =
+  [
+    { 'login': 'vagrant', 'theme': 'blinks' },
+    { 'login': 'root', 'theme': 'blinks' }
+  ]

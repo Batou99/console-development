@@ -18,12 +18,6 @@ end.run_action(:run)
   end
 end
 
-execute "install oh-my-zsh" do
-  command "curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh"
-  ignore_failure true
-  action :nothing
-end
-
 remote_directory "/home/vagrant/" do
   source '.vim'
   recursive true

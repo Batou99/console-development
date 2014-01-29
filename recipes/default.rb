@@ -21,6 +21,8 @@ end
 
 execute "install ctags (does not work as package)" do
   command "apt-get install ctags"
+  ignore_failure true
+  action :nothing
 end
 
 remote_directory "/home/vagrant/.vim" do
@@ -33,6 +35,8 @@ end
 
 execute "link" do
   command "ln -s /home/vagrant/.vim/vimrc /home/vagrant/.vimrc"
+  ignore_failure true
+  action :nothing
 end
 
 execute "chown" do
@@ -47,6 +51,8 @@ end
 
 execute "link" do
   command "ln -s /root/.vim/vimrc /root/.vimrc"
+  ignore_failure true
+  action :nothing
 end
 
 include_recipe 'oh-my-zsh'

@@ -6,4 +6,4 @@ description      'Installs/Configures console-development'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.2'
 depends          'apt'
-depends          'ohmyzsh'
+depends          'oh-my-zsh'

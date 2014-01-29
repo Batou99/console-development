@@ -1,5 +1,5 @@
 site :opscode
-cookbook 'ohmyzsh', github: '7even/oh-my-zsh'
+cookbook 'oh-my-zsh', github: '7even/oh-my-zsh'
 
 metadata
 

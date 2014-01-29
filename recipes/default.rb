@@ -19,15 +19,30 @@ end.run_action(:run)
   end
 end
 
+remote_directory "/home/vagrant/.vim" do
+  source '.vim'
+  recursive true
+  action :create_if_missing
+  files_owner "vagrant"
+  files_group "vagrant"
+end
 
-%w{root vagrant}.each do |user|
-  remote_directory "/home/#{user}/.vim" do
-    source '.vim'
-    recursive true
-    action :create_if_missing
-    files_owner user
-    files_group user
-  end
+execute "link" do
+  command "ln -s /home/vagrant/.vim/vimrc /home/vagrant/.vimrc"
+end
+
+execute "chown" do
+  command "chown -R vagrant.vagrant /home/vagrant;"
+end
+
+remote_directory "/root/.vim" do
+  source '.vim'
+  recursive true
+  action :create_if_missing
+end
+
+execute "link" do
+  command "ln -s /root/.vim/vimrc /root/.vimrc"
 end
 
 include_recipe 'oh-my-zsh'

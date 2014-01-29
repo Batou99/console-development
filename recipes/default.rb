@@ -19,6 +19,10 @@ end.run_action(:run)
   end
 end
 
+execute "install ctags (does not work as package)" do
+  command "apt-get install ctags"
+end
+
 remote_directory "/home/vagrant/.vim" do
   source '.vim'
   recursive true

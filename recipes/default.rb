@@ -57,7 +57,7 @@ end
 
 include_recipe 'oh-my-zsh'
 include_recipe 'rvm::vagrant'
-include_recipe 'rvm::user_install'
+include_recipe 'rvm::user'
 
 %w( .tmux.conf .zshrc).each do |file|
   cookbook_file file do

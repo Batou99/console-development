@@ -19,12 +19,15 @@ end.run_action(:run)
   end
 end
 
-remote_directory "/home/vagrant/" do
-  source '.vim'
-  recursive true
-  action :create_if_missing
-  files_owner 'vagrant'
-  files_group 'vagrant'
+
+%w{root vagrant}.each do |user|
+  remote_directory "/home/#{user}/.vim" do
+    source '.vim'
+    recursive true
+    action :create_if_missing
+    files_owner user
+    files_group user
+  end
 end
 
 include_recipe 'oh-my-zsh'

@@ -13,7 +13,7 @@ execute "update package index" do
   action :nothing
 end.run_action(:run)
 
-%w{build-essential tmux}.each do |pkg|
+%w{build-essential tmux vim-nox}.each do |pkg|
   package pkg do
     action :install
   end

@@ -56,6 +56,7 @@ execute "link" do
 end
 
 include_recipe 'oh-my-zsh'
+include_recipe 'chef-rvm'
 
 %w( .tmux.conf .zshrc).each do |file|
   cookbook_file file do

@@ -5,6 +5,7 @@ default['oh-my-zsh']['users'] = [
 
 default['rvm']['user_installs'] = [
   { 'user' => 'vagrant',
+    'install_rubies' => true,
     'default_ruby' => '2.0.0',
     'rubies' => ['2.0.0'],
     'global_gems' => [{ 'name' => 'bundler' }]
